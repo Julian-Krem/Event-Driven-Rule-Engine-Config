@@ -1,0 +1,16 @@
+{
+  "all": [
+    { "field": "user.age", "operationToBePerformed": "greaterThan", "value": 18 },
+    {
+      "any": [
+        { "field": "user.country", "operationToBePerformed": "equals", "value": "US" },
+        { "field": "user.country", "operationToBePerformed": "equals", "value": "CA" }
+      ]
+    },
+    {
+      "none": [
+        { "field": "user.banned", "operationToBePerformed": "equals", "value": true }
+      ]
+    }
+  ]
+}

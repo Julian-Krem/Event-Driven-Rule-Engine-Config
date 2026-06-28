@@ -1,0 +1,16 @@
+{
+  "all": [
+    { "field": "order.totalAmount", "operationToBePerformed": "greaterThan", "value": 100 },
+    {
+      "any": [
+        { "field": "user.membershipTier", "operationToBePerformed": "equals", "value": "gold" },
+        { "field": "user.membershipTier", "operationToBePerformed": "equals", "value": "platinum" }
+      ]
+    },
+    {
+      "none": [
+        { "field": "order.flaggedForReview", "operationToBePerformed": "equals", "value": true }
+      ]
+    }
+  ]
+}

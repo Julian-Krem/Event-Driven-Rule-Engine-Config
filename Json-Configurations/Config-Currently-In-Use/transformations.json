@@ -1,0 +1,8 @@
+[
+  { "operationToBePerformed": "set",    "path": "user.fullName",  "expression": "user.firstName + \" \" + user.lastName" },
+  { "operationToBePerformed": "set",    "path": "user.age",       "expression": "user.age + 1" },
+  { "operationToBePerformed": "set",    "path": "meta.processed", "value": true },
+  { "operationToBePerformed": "delete", "path": "user.firstName" },
+  { "operationToBePerformed": "delete", "path": "user.lastName" },
+  { "operationToBePerformed": "rename", "from": "user.country",   "to": "user.countryCode" }
+]

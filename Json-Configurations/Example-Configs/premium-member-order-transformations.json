@@ -1,0 +1,7 @@
+[
+  { "operationToBePerformed": "set",    "path": "order.label",           "expression": "\"Order-\" + order.id" },
+  { "operationToBePerformed": "set",    "path": "order.discountedTotal", "expression": "order.totalAmount * 0.9" },
+  { "operationToBePerformed": "set",    "path": "meta.processed",        "value": true },
+  { "operationToBePerformed": "delete", "path": "order.internalNotes" },
+  { "operationToBePerformed": "rename", "from": "user.membershipTier",   "to": "user.tier" }
+]
