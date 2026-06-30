@@ -1,5 +1,5 @@
 {
-  "every": [
+  "all": [
     { "field": "user.age", "operationToBePerformed": "greaterThan", "value": 18 },
     {
       "any": [
