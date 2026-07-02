@@ -4,7 +4,8 @@
     {
       "any": [
         { "field": "user.country", "operationToBePerformed": "equals", "value": "US" },
-        { "field": "user.country", "operationToBePerformed": "equals", "value": "CA" }
+        { "field": "user.country", "operationToBePerformed": "equals", "value": "CA" },
+        { "field": "user.country", "operationToBePerformed": "equals", "value": "UK" }
       ]
     },
     {
